@@ -21,69 +21,83 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="header-logo">
-            Web<span class="header-logo-color">Studio</span></a
-          >
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link present" href="./index.html">Studio</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Portfolio</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+      <div class="header-for-desktop">
+        <div class="container header-container">
+          <nav class="header-navigation">
+            <a href="./index.html" class="header-logo">
+              Web<span class="header-logo-color">Studio</span></a
+            >
+            <ul class="header-menu-list">
+              <li class="header-menu-item">
+                <a class="header-menu-link present" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="header-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="header-for-mob">
+        <a href="./index.html" class="header-logo">
+          Web<span class="header-logo-color">Studio</span></a
+        >
         <button type="button" class="header-open-menu">
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-solid_menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <div>
-          <button type="button" class="header-close-menu">
-            <svg width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
 
-          <ul class="mob-menu-list">
-            <li class="mob-menu-item">
-              <a class="mob-menu-link present" href="./index.html">Studio</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link" href="">Portfolio</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </div>
+      <div class="mob-menu is-open">
+        <div class="mob-menu-open">
+          <div>
+            <button type="button" class="header-close-menu">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
 
-        <div>
+            <ul class="mob-menu-list">
+              <div class="mob-link">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link mob-current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link" href="">Portfolio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link" href="">Contacts</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+
           <address class="mob-address">
             <ul class="mob-address-list">
               <li class="mob-address-item">
-                <a class="mob-address-link" href="tel:+110001111111"
+                <a class="mob-address-link mob-current" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
@@ -650,13 +664,15 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
+    <!---------------- Footer ----------------->
     <footer class="footer">
       <div class="container footer-blok">
         <div class="footer-box">
-          <a class="footer-logo" href="./index.html"
-            >Web<span class="footer-logo-color">Studio</span></a
-          >
+          <div class="footer-mob-logo">
+            <a class="footer-logo" href="./index.html"
+              >Web<span class="footer-logo-color">Studio</span></a
+            >
+          </div>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -717,7 +733,7 @@
         </div>
       </div>
     </footer>
-    <!-- Modal -->
+    <!------------------------- Modal ------------------------>
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
