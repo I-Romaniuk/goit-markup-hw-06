@@ -174,7 +174,9 @@ address {
   padding-top: 48px;
   padding-bottom: 168px;
 }
-
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 .mob-adress {
   font-style: normal;
   margin-left: auto;
